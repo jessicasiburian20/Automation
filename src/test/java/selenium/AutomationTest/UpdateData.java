@@ -31,5 +31,14 @@ public class UpdateData {
 		//update Customer Name
 		driver.findElement(By.name("name")).clear();
 		driver.findElement(By.name("name")).sendKeys("Test Edit");
+		driver.findElement(By.xpath("email")).clear();
+		driver.findElement(By.name("email")).sendKeys("testedit123@gmail.com");
+		driver.findElement(By.xpath("phoneNo")).clear();
+		driver.findElement(By.name("phoneNo")).sendKeys("081212345678");
+		driver.findElement(By.xpath("address")).clear();
+		driver.findElement(By.name("address")).sendKeys("Jakarta Barat Daya");
+		driver.findElement(By.xpath("companyName")).clear();
+		driver.findElement(By.name("companyName")).sendKeys("Jakarta Barat Daya");
+		driver.findElement(By.xpath("//button[@aria-label='SAVE']")).click();
 	}
 }
